@@ -1,0 +1,24 @@
+<form>
+  <div>
+    <label>Name</label>
+    <input type="text" placeholder="Nhập tên" [(ngModel)]="name" name="name"/>
+  </div>
+  <div>
+    <label>Age</label>
+    <input type="number" placeholder="Nhập tuổi" [(ngModel)]="age" name="age"/>
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" placeholder="Nhập email" [(ngModel)]="email" name="email"/>
+  </div>
+  <div>
+    <label>Là Admin</label>
+    <input type="checkbox" [(ngModel)]="isAdmin" name="isAdmin"/>
+  </div>
+  <button (click)="onSubmitForm()">Submit</button>
+  <hr>
+  <div>
+    Thông tin:
+    <p>Tên {{name}}</p>
+  </div>
+</form>

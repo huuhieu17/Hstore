@@ -1,0 +1,9 @@
+
+<div [ngClass]="{'active' : isActive, 'non-active' : !isActive}">
+  @if(isActive){
+    <div>Active</div>
+  }@else{
+    <div>Non Active</div>
+  }
+</div>
+<button (click)="toggle()">Toggle</button>

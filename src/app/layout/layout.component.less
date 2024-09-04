@@ -1,0 +1,100 @@
+@import 'src/assets/styles/variables.less';
+.container{
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter';
+  .header{
+    height: 7%;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    padding: 1% 3%;
+    .top{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1%;
+      .category{
+        width: 33.33%;
+        text-transform: uppercase;
+        display: flex;
+        gap: 10px;
+        color: @secondary-color;
+        font-weight: bold;
+        cursor: pointer;
+        &.active{
+          color: @main-color;
+        }
+        div:hover{
+          color: @main-color;
+        }
+      }
+      .logo{
+        cursor: pointer;
+        text-align: center;
+        width: 33.33%;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .right{
+        width: 33.33%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        button{
+          background-color: unset;
+          border:0;
+          outline: none;
+        }
+      }
+    }
+    .bottom{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .search-input{
+        width: 20%;
+        position: relative;
+        display: flex;
+        padding: 3px;
+        .icon-search{
+          position: absolute;
+          top: 5px;
+          color: @secondary-color;
+        }
+        input{
+          padding: 4px 2px 4px 20px;
+          border: 0;
+          outline: none;
+        }
+      }
+      .menu{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-weight: 500;
+        .menu-item{
+          font-size: 18px;
+          cursor: pointer;
+          color: @main-color;
+          &.active{
+            color: @active-color;
+          }
+          &:hover{
+            color: @active-color;
+            font-weight: 600;
+          }
+        }
+      }
+      .about{
+        width: 20%;
+      }
+    }
+  }
+  .content{
+    width: 100%;
+  }
+}

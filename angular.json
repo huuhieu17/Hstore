@@ -27,7 +27,8 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/fonts"
             ],
             "styles": [
               "src/styles.less"
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5fe5ed2e-3a8c-4217-bddf-25941765bdf5"
   }
 }
